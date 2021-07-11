@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	width: 100%;
+	height: auto;
+	background: #f8f9fb;
+	position: relative;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+}
+
+.header__logoImage {
+	padding: 0px 50px 0px 40px;
+}
+
+.header__collection {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	border-left: 1px solid #f4f4f4;
+	border-right: 1px solid #f4f4f4;
+	padding: 0px 14px;
+}
+
+.header__collectionItem {
+	list-style-type: none;
+}
+
+.header__collectionLink {
+	text-decoration: none;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header__collectionImage {
+	width: 24px;
+}
+
+.header__collectionLink > span {
+	padding: 10px 28px 0px 28px;
+	font-size: 12px;
+}
+
+.header__searchbar {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	height: 80px;
+	border-right: 1px solid #f4f4f4;
+}
+
+.header__searchbarImage {
+	padding-left: 33px;
+}
+
+.header__search {
+	border: none;
+	height: 40px;
+	flex: 1;
+	margin-left: 15px;
+	font-size: 16px;
+	outline: none;
+}
+
+.header__profile {
+	display: flex;
+	align-items: center;
+}
+
+.header__avatar {
+	width: 42px;
+	height: 42px;
+	min-height: 42px;
+	min-width: 42px;
+	border-radius: 50%;
+	background-image: url("https://image.freepik.com/free-vector/beard-man-avatar_96853-399.jpg");
+	background-position: center;
+	background-size: cover;
+	margin-left: 30px;
+}
+
+.header__profileInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	padding-left: 15px;
+	padding-right: 119px;
+	font-size: 12px;
+	border-right: 1px solid #f4f4f4;
+}
+
+.header__profileName {
+	line-height: 11px;
+	color: #181818;
+	font-weight: 600;
+	padding-right: 15px;
+}
+
+.header__profileWho {
+	line-height: 11px;
+	text-transform: uppercase;
+	color: rgba(24, 24, 24, 0.2);
+	font-weight: 500;
+}
+
+.header__profileStatus {
+	padding-top: 7px;
+}
+
+.header__profileViews {
+	font-size: 12px;
+	color: #747474;
+	font-weight: 300;
+}
+
+.header__profileProgress {
+	color: #02b033;
+}
+
+.header__otherOptions {
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-right: 1px solid #f4f4f4;
+	margin-right: 40px;
+}
+
+.header__otherOptions > span {
+	padding: 5px 23px;
+	font-size: 12px;
+}
+
+/* CHAT SECTION */
+.chat-sidebar-header {
+	width: 85%;
+	font-weight: 500;
+	height: 60px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.chat-sidebar-header span {
+	font-size: 12px;
+	/* margin-left: 15px; */
+}
+.chat-sidebar-collection {
+	position: absolute;
+	width: 290px;
+	height: 560px;
+	left: 130px;
+	top: 120px;
+	/* border: 2px solid #000; */
+	list-style-type: none;
+	background-color: #fff;
+}
+
+.chat-sidebar-collection-list-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border: 2px solid #000; */
+	width: 100%;
+	height: 80px;
+}
+.chat-sidebar-item-images {
+	position: relative;
+}
+.chat-sidebar-item-image {
+	width: 52px;
+	height: 52px;
+	margin-left: 15px;
+	z-index: 0;
+	/* position: absolute; */
+	/* background: url(./Photo1.png) no-repeat; */
+	border-radius: 26px;
+}
+.chat-sidebar-item-images .circle {
+	top: 40px;
+	left: 55px;
+	width: 9px;
+	height: 9px;
+	background-color: #02b033;
+	position: absolute;
+	z-index: 1;
+	border-radius: 50%;
+}
+
+.chat-sidebar-collection-item-text {
+	margin-left: 20px;
+	position: relative;
+}
+.chat-sidebar-collection-item-text h3 {
+	/* position: absolute; */
+	width: 119px;
+	height: 13px;
+	margin-top: 10px;
+	/* left: calc(50% - 119px/2 - 438.5px); */
+	/* top: 290px; */
+	font-family: Gotham Pro;
+	font-size: 14px;
+	line-height: 13px;
+	color: #0275b1;
+}
+.chat-sidebar-collection-leftside-box {
+	height: 40px;
+	width: 15px;
+	background: #fff;
+	opacity: 0.8;
+	position: absolute;
+	top: 0;
+	left: 150px;
+	z-index: 1000;
+}
+.chat-sidebar-collection-rightside-box {
+	height: 40px;
+	width: 20px;
+	background: #fff;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	left: 160px;
+	z-index: 1001;
+}
+.chat-sidebar-collection-item-text p {
+	/* position: absolute; */
+	width: 95%;
+	height: 30px;
+	/* left: calc(50% - 181px/2 - 407.5px); */
+	/* top: 308px; */
+	overflow: hidden;
+	margin-top: 3px;
+	font-family: Gotham Pro;
+	font-size: 10px;
+	line-height: 10px;
+}
+.chat-sidebar-collection-line {
+	width: 290px;
+	height: 0px;
+	border: 1px solid #f4f4f4;
+}
+.chat-sidebar-collection-footer {
+	/* border: 2px solid #000; */
+	width: 290px;
+	height: 75px;
+	background: #ffffff;
+	border-radius: 4px;
+	outline: none;
+	margin-top: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.chat-collection-btn {
+	width: 230px;
+	height: 32px;
+	background-color: #0077b5;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+}
+.chat-massages {
+	position: absolute;
+	width: 850px;
+	height: 655px;
+	left: 450px;
+	top: 120px;
+	/* border: 2px solid #000; */
+	list-style-type: none;
+	background-color: #fff;
+}
+.chat-massages-header {
+	width: 85%;
+	font-weight: 500;
+	height: 60px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+}
+.chat-massages-header-text {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.chat-massages-header-text h3:nth-child(1) {
+	color: #000;
+}
+.chat-massages-header-text h3:nth-child(1) span {
+	color: #0077b5;
+}
+.chat-massages-header-text h3:nth-child(2) {
+	color: #181818;
+	opacity: 0.5;
+}
+.chat-massages-header-shared {
+	width: 20%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.chat-massages-header-shared i {
+	color: #0077b5;
+}
+.chat-messages-body {
+	width: 850px;
+	height: 521px;
+	background: #fff;
+}
+.chat-massages-footer {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 25px auto;
+}
+
+.chat-massages-line {
+	width: 850px;
+	height: 0px;
+	border: 1px solid #f4f4f4;
+}
+.chat-massages-footer-text input {
+	font-size: 18px;
+	padding: 3px 10px;
+	border: none;
+}
+.chat-massages-footer-file {
+	font-size: 18px;
+	width: 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.chat-massages-footer-file i:nth-child(1) {
+	color: #000;
+	opacity: 0.6;
+}
+.chat-massages-footer-file i:nth-child(2) {
+	/* border: 1px solid #000; */
+	padding: 10px;
+	background-color: #0077b5;
+	color: #fff;
+	border-radius: 5px;
+}
+
+/* Footer section */
+
+footer {
+	border-top: 2px solid rgb(0, 0, 0, 0.05);
+	position: relative;
+	top: 710px;
+	background: #f7f9fb, 100%;
+	padding: 35px 0;
+	margin-top: 20px;
+}
+.feed__footer__grid {
+	display: grid;
+	grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr 1.5fr;
+}
+.feed__footer__grid__logo {
+	width: 10%;
+}
+.feed__footer__grid__logo p {
+	font-size: 14px;
+	padding-top: 12px;
+	font-weight: 500;
+}
+.feed__footer__grid__logo p span {
+	color: #0275b1;
+}
+.feed__footer__grid__link {
+	width: 100%;
+	font-size: 12px;
+}
+.feed__footer__grid__link a {
+	display: block;
+	text-decoration: none;
+	color: #181818;
+	padding-bottom: 12px;
+	transition: all 0.3s;
+}
+.feed__footer__grid__link a:hover {
+	text-decoration: underline;
+	color: #0275b1;
+}
+.feed__footer__grid__link p {
+	padding-bottom: 30px;
+	font-weight: 500;
+}
+.space {
+	width: 12px;
+	height: 42px;
+}
+.feed__footer__grid__link button {
+	display: block;
+	width: 170px;
+	height: 32px;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer__btn__help {
+	background: #0275b1;
+	border: 1px solid #0275b1;
+	border-radius: 4px;
+	font-size: 12px;
+	color: #fff;
+}
+.footer__btn__setting {
+	border: 1px solid #0275b1;
+	border-radius: 4px;
+	background-color: #fff;
+	color: #0275b1;
+	font-size: 12px;
+}
+.feed__footer__grid__link select {
+	width: 100%;
+	padding: 10px 15px;
+	background-color: #fff;
+	border: none;
+	border-radius: 4px;
+}

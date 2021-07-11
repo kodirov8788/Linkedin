@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background: #f8f9fb;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.header__logoImage{
+    padding: 0px 44px 0px 40px;
+}
+
+.header__collection{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+    padding: 0px 14px;
+}
+
+.header__collectionItem{
+    list-style-type: none;
+}
+
+.header__collectionLink{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__collectionImage{
+    width: 24px;
+}
+
+.header__collectionLink > span{
+    padding: 10px 28px 0px 28px;
+    font-size: 12px;
+}
+
+.header__searchbar{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 80px;
+    border-right: 1px solid #f4f4f4;
+}
+
+.header__searchbarImage{
+    padding-left: 33px;
+}
+
+.header__search{
+    border: none;
+    height: 40px;
+    flex: 1;
+    margin-left: 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.header__profile{
+    display: flex;
+    align-items: center;
+}
+
+.header__avatar{
+    width: 42px;
+    height: 42px;
+    min-height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    background-image: url('https://image.freepik.com/free-vector/beard-man-avatar_96853-399.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+}
+
+.header__profileInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 119px;
+    font-size: 12px;
+    border-right: 1px solid #f4f4f4;
+}
+
+.header__profileName{
+    line-height: 11px;
+    color: #181818;
+    font-weight: 600;
+    padding-right: 15px;
+}
+
+.header__profileWho{
+    line-height: 11px;
+    text-transform: uppercase;
+    color: rgba(24, 24, 24, 0.2);
+    font-weight: 500;
+}
+
+.header__profileStatus{
+    padding-top: 7px;
+}
+
+.header__profileViews{
+    font-size: 12px;
+    color: #747474;
+    font-weight: 300;
+}
+
+.header__profileProgress{
+    color: #02B033;
+}
+
+.header__otherOptions{
+    height: 80px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #f4f4f4;
+    margin-right: 40px;
+}
+
+.header__otherOptions > span{
+    padding: 5px 23px;
+    font-size: 12px;
+}
